@@ -5725,7 +5725,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var DOM = {
   enterCtrl: document.querySelector(".button"),
   enterText: document.querySelector(".button .button-text"),
-  panel: document.querySelector(".panel")
+  header: document.querySelector(".header"),
+  content: document.querySelector(".content")
 };
 
 var Animations = /*#__PURE__*/function () {
@@ -5753,7 +5754,7 @@ var Animations = /*#__PURE__*/function () {
         transformOrigin: "50% 50%"
       });
 
-      _gsap.gsap.set([this.DOM.circleText, DOM.enterCtrl, DOM.enterText, DOM.panel], {
+      _gsap.gsap.set([this.DOM.circleText, DOM.enterCtrl, DOM.enterText, DOM.content], {
         opacity: 0
       });
 
@@ -5779,16 +5780,16 @@ var Animations = /*#__PURE__*/function () {
         return _this.enter();
       };
 
-      _gsap.gsap.to(DOM.enterText, {
-        duration: 2,
-        ease: "expo",
-        opacity: 1
-      });
-
       DOM.enterCtrl.addEventListener("click", this.enterClickEv);
 
       _gsap.gsap.set(DOM.enterCtrl, {
         pointerEvents: "auto"
+      });
+
+      _gsap.gsap.to(DOM.enterText, {
+        duration: 0.5,
+        ease: "expo",
+        opacity: 1
       });
     }
   }, {
@@ -5831,7 +5832,7 @@ var Animations = /*#__PURE__*/function () {
         _gsap.gsap.timeline({
           repeat: -1,
           repeatDelay: _this2.wordsAnimation * (2 + _this2.words),
-          delay: _this2.wordsAnimation * (2 + 2 * (i + 1))
+          delay: 0.5 + _this2.wordsAnimation * (2 + 2 * (i + 1))
         }).to(x, {
           duration: _this2.wordsAnimation,
           fill: _this2.colors[i]
@@ -5870,7 +5871,7 @@ var Animations = /*#__PURE__*/function () {
         stagger: {
           amount: 0.3
         }
-      }, 0).to(DOM.panel, {
+      }, 0).to([DOM.header, DOM.content], {
         duration: 1,
         ease: "power3.out",
         startAt: {
@@ -5922,7 +5923,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44581" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46593" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

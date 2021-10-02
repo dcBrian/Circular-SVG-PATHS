@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 const DOM = {
   enterCtrl: document.querySelector(".button"),
   enterText: document.querySelector(".button .button-text"),
-  panel: document.querySelector(".panel"),
+  header: document.querySelector(".header"),
+  content: document.querySelector(".content"),
 };
 
 export class Animations {
@@ -23,7 +24,7 @@ export class Animations {
 
   initialize() {
     gsap.set(this.DOM.circleText, { transformOrigin: "50% 50%" });
-    gsap.set([this.DOM.circleText, DOM.enterCtrl, DOM.enterText, DOM.panel], {
+    gsap.set([this.DOM.circleText, DOM.enterCtrl, DOM.enterText, DOM.content], {
       opacity: 0,
     });
     gsap.set(DOM.enterCtrl, { pointerEvents: "none" });
@@ -35,13 +36,14 @@ export class Animations {
 
   addEvents() {
     this.enterClickEv = () => this.enter();
+    DOM.enterCtrl.addEventListener("click", this.enterClickEv);
+    gsap.set(DOM.enterCtrl, { pointerEvents: "auto" });
+
     gsap.to(DOM.enterText, {
-      duration: 2,
+      duration: 0.5,
       ease: "expo",
       opacity: 1,
     });
-    DOM.enterCtrl.addEventListener("click", this.enterClickEv);
-    gsap.set(DOM.enterCtrl, { pointerEvents: "auto" });
   }
 
   removeEvents() {
@@ -77,7 +79,7 @@ export class Animations {
         .timeline({
           repeat: -1,
           repeatDelay: this.wordsAnimation * (2 + this.words),
-          delay: this.wordsAnimation * (2 + 2 * (i + 1)),
+          delay: 0.5 + this.wordsAnimation * (2 + 2 * (i + 1)),
         })
         .to(x, {
           duration: this.wordsAnimation,
@@ -123,7 +125,7 @@ export class Animations {
         0
       )
       .to(
-        DOM.panel,
+        [DOM.header, DOM.content],
         {
           duration: 1,
           ease: "power3.out",
