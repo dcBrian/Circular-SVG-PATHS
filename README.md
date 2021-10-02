@@ -6,7 +6,7 @@
       A small experiment with SVG Paths
       <br />
    <br />
-    <button href="https://sleepy-williams-ce0d6e.netlify.app/">View Demo</button>
+     <a href="https://sleepy-williams-ce0d6e.netlify.app/">View Demo</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
