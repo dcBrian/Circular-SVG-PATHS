@@ -112,9 +112,11 @@ a {
   margin: auto 3rem;
 }
 
-.content {
+.panel {
   opacity: 0;
+}
 
+.content {
   display: flex;
   width: 100vw;
   position: relative;
