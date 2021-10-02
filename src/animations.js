@@ -23,9 +23,9 @@ export class Animations {
 
   initialize() {
     gsap.set(this.DOM.circleText, { transformOrigin: "50% 50%" });
-    gsap.set([this.DOM.circleText, DOM.enterCtrl, DOM.enterText, DOM.panel], {
-      opacity: 0,
-    });
+    // gsap.set([this.DOM.circleText, DOM.enterCtrl, DOM.enterText, DOM.panel], {
+    //   opacity: 0,
+    // });
     gsap.set(DOM.enterCtrl, { pointerEvents: "none" });
 
     // rotate to make the highlights readable

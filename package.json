@@ -9,7 +9,7 @@
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
-    "build": "parcel build src/index.html "
+    "build": "yarn clean && parcel build src/index.html "
   },
   "devDependencies": {
     "parcel": "^2.0.0-rc.0"
