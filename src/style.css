@@ -21,13 +21,13 @@ textPath {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
 }
 
 .text {
   text-transform: uppercase;
   transform-origin: 700px 700px;
   will-change: transform, opacity;
+  opacity: 0;
 }
 .text--1 {
   font-size: 25vmin;
