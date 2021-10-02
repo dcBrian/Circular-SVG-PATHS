@@ -10,6 +10,6 @@
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
-    "build": "yarn clean && parcel build src/index.html "
+    "build": "yarn clean && parcel build src/index.html --no-minify "
   }
 }
