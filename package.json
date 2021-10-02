@@ -4,14 +4,12 @@
   "author": "ivucady",
   "license": "MIT",
   "dependencies": {
-    "gsap": "^3.8.0"
+    "gsap": "^3.8.0",
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
     "build": "yarn clean && parcel build src/index.html "
-  },
-  "devDependencies": {
-    "parcel": "^2.0.0-rc.0"
   }
 }
