@@ -1,14 +1,13 @@
 <br />
-<p align="left">
-  <h3 align="left">Circular_SVG</h3>
+<p align="center">
+  <h3 align="center">Circular SVG</h3>
 
-  <p align="left">
+  <p align="center">
       A small experiment with SVG Paths
       <br />
+   <br />
     <button href="https://sleepy-williams-ce0d6e.netlify.app/">View Demo</button>
   </p>
-    
-</p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -34,7 +33,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ivucady/markdown.git
+   git clone https://github.com/ivucady/circular_svg.git
    ```
 2. Install all depedencies
    ```sh
