@@ -25,7 +25,7 @@ textPath {
 
 .text {
   text-transform: uppercase;
-  /* transform-origin: left 700px top 700px; */
+  transform-origin: 700px 700px;
   will-change: transform, opacity;
 }
 .text--1 {
