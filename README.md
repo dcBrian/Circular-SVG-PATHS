@@ -1,12 +1,11 @@
-<br />
+## Circular SVG PATHS :dart:
+This is a little experiment I made to increase my knownledge on the different ways to use SVG in web development. With this project, I wanted to demonstrate how we could use SVG PATHS to animate a text on a custom Path. If you feel it can help you with something, feel free to use partly or totally this code.
+        <br />
+        
 <p align="center">
-  <h3 align="center">Circular SVG</h3>
-
-  <p align="center">
-      A small experiment with SVG Paths
-      <br />
-   <br />
-     <a href="https://sleepy-williams-ce0d6e.netlify.app/">View Demo</a>
+    <br />
+      <a href="https://sleepy-williams-ce0d6e.netlify.app/">View Demo</a>
+    <br />
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -45,12 +44,7 @@
    ```
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 <!-- CONTACT -->
 ## Contact
 
-ivucady@gmail.com
+dacruzbrian1@gmail.com
