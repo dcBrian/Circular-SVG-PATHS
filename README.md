@@ -11,7 +11,7 @@ This is a little experiment I made to increase my knownledge on the different wa
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Circular_SVG](/images/circular.png?raw=true)
+![Circular-SVG-PATHS](/images/circular.png?raw=true)
 
 ### Built With
 
@@ -32,7 +32,7 @@ This is a little experiment I made to increase my knownledge on the different wa
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ivucady/circular_svg.git
+   git clone https://github.com/dcBrian/Circular-SVG-PATHS.git
    ```
 2. Install all depedencies
    ```sh
