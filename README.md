@@ -1,5 +1,5 @@
 ## Circular SVG PATHS :dart:
-This is a little experiment I made to increase my knownledge on the different ways to use SVG in web development. With this project, I wanted to demonstrate how we could use SVG PATHS to animate a text on a custom Path. If you feel it can help you with something, feel free to use partly or totally this code.
+This is a little experiment I made to increase my knownledge on the different ways to use SVG in web development. With this project, I wanted to demonstrate how we could use SVG PATHS to render a text on a custom Path. If you feel it can help you with something, feel free to use partly or totally this code.
         <br />
         
 <p align="center">
